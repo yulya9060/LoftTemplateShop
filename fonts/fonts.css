@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-SemiBoldItalic.woff2") format("woff2"), url("PFBeauSansPro-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro XThin';
+  src: url("PFBeauSansPro-XThinItalic.woff2") format("woff2"), url("PFBeauSansPro-XThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-Regular.woff2") format("woff2"), url("PFBeauSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-Light.woff2") format("woff2"), url("PFBeauSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-LightItalic.woff2") format("woff2"), url("PFBeauSansPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-Bold.woff2") format("woff2"), url("PFBeauSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-Black.woff2") format("woff2"), url("PFBeauSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-Italic.woff2") format("woff2"), url("PFBeauSansPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-ThinItalic.woff2") format("woff2"), url("PFBeauSansPro-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-BoldItalic.woff2") format("woff2"), url("PFBeauSansPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro XThin';
+  src: url("PFBeauSansPro-XThin.woff2") format("woff2"), url("PFBeauSansPro-XThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-BlackItalic.woff2") format("woff2"), url("PFBeauSansPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro Bbook';
+  src: url("PFBeauSansPro-BbookItalic.woff2") format("woff2"), url("PFBeauSansPro-BbookItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-Thin.woff2") format("woff2"), url("PFBeauSansPro-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro';
+  src: url("PFBeauSansPro-SemiBold.woff2") format("woff2"), url("PFBeauSansPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PF BeauSans Pro Bbook';
+  src: url("PFBeauSansPro-Bbook.woff2") format("woff2"), url("PFBeauSansPro-Bbook.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
