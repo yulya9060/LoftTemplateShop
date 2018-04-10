@@ -108,7 +108,7 @@
                                                      
                                                 </svg>    
                                         </div>
-                                    <button class="bascket-remove__btn">
+                                    <button class="btn-underline bascket-remove__btn">
                                         Удалить отмеченные
                                     </button>
                                   
@@ -118,10 +118,12 @@
                             <ul class="bascket__list">
                                     <li class="bascket__item">
                                         <div class="bascket__item-block">
-                                            <label for="bascket__item-checkbox" class="bascket__item-label">
-                                                  1
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" class='input-hidden product-checkbox' name="bascket__item-checkbox" >
+                                                <div class="checkbox-fake"></div>
+                                                <div class="chekcbox-label">1</div>
                                             </label>
-                                            <input type="checkbox" name="bascket__item-checkbox" id="bascket__item-checkbox">
+                                         
                                         </div>
                                         <div class="bascket__item-block">
                                             <div class="product-img">
@@ -135,80 +137,196 @@
                                         </div>
                                         <div class="bascket__item-block">
                                                 <div class="bascket__item-calculation">
-                                                        <span class="bascket__item-price">990 Р</span>
+                                                        <span class="bascket__item-price calc_currency">990 </span>
                                                         <label for="" class="bascket__item-label">
-                                                            <input type="number" name="count" id="" class="input-text input-count">
+                                                            <input type="text" name="count" id="" class="input-text input-count">
                                                         </label>
-                                                        <span class="bascket__item-amount">
-                                                                990 Р
+                                                        <span class="bascket__item-amount calc_currency">
+                                                                990 
                                                             </span>
                                                 </div>
                                         </div>
                                     </li>
                                     <li class="bascket__item">
-                                            <div class="bascket__item-block">
-                                                <label for="bascket__item-checkbox" class="bascket__item-label">
-                                                      1
-                                                </label>
-                                                <input type="checkbox" name="bascket__item-checkbox" id="bascket__item-checkbox">
+                                        <div class="bascket__item-block">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" class='input-hidden product-checkbox' name="bascket__item-checkbox" >
+                                                <div class="checkbox-fake"></div>
+                                                <div class="chekcbox-label">1</div>
+                                            </label>
+                                         
+                                        </div>
+                                        <div class="bascket__item-block">
+                                            <div class="product-img">
+                                                    <img src="./images/Layer317.png" alt="" srcset="">
                                             </div>
-                                            <div class="bascket__item-block">
-                                                    <div class="product-img">
-                                                            <img src="./images/Layer317.png" alt="" srcset="">
-                                                    </div>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <p>
+                                                        Нож складной WENGER Evolution, 'Автобус', 13 функций, 85 мм. WENGER
+                                                    </p>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <div class="bascket__item-calculation">
+                                                        <span class="bascket__item-price calc_currency">990 </span>
+                                                        <label for="" class="bascket__item-label">
+                                                            <input type="text" name="count" id="" class="input-text input-count">
+                                                        </label>
+                                                        <span class="bascket__item-amount calc_currency">
+                                                                990 
+                                                            </span>
+                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="bascket__item">
+                                        <div class="bascket__item-block">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" class='input-hidden product-checkbox' name="bascket__item-checkbox" >
+                                                <div class="checkbox-fake"></div>
+                                                <div class="chekcbox-label">1</div>
+                                            </label>
+                                         
+                                        </div>
+                                        <div class="bascket__item-block">
+                                            <div class="product-img">
+                                                    <img src="./images/Layer317.png" alt="" srcset="">
                                             </div>
-                                            <div class="bascket__item-block">
-                                                    <p>
-                                                            Нож складной WENGER Evolution, 'Автобус', 13 функций, 85 мм. WENGER
-                                                        </p>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <p>
+                                                        Нож складной WENGER Evolution, 'Автобус', 13 функций, 85 мм. WENGER
+                                                    </p>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <div class="bascket__item-calculation">
+                                                        <span class="bascket__item-price calc_currency">990 </span>
+                                                        <label for="" class="bascket__item-label">
+                                                            <input type="text" name="count" id="" class="input-text input-count">
+                                                        </label>
+                                                        <span class="bascket__item-amount calc_currency">
+                                                                990 
+                                                            </span>
+                                                            <div class="calc-quant-amount">
+                                                                    <div class="calc-quant-amount-title">Изменить количество</div>
+                                                                    <div class="calc-quant-amount-main">
+                                                                            <span class="calc-quant-amount-price">990</span>
+                                                                            <button class="calc-quant-amount__btn calc-quant-amount-minus">-</button>
+                                                                            <label for="" class="bascket__item-label">
+                                                                                <input type="text" name="count" id="" class="input-text input-count">
+                                                                            </label>
+                                                                            <button class="calc-quant-amount__btn calc-quant-amount-plus">+</button>
+                                                                            <span class="calc-quant-amount-total calc_currency">
+                                                                                    990 
+                                                                                </span>
+                                                                    </div>
+                                                                    <div class="calc-quant-amount-link">
+                                                                            <button class="btn-underline calc-quant-amount__save">
+                                                                                    Сохранить
+                                                                                </button>
+                                                                                <button class="btn-underline calc-quant-amount__cancel">
+                                                                                        Отменить
+                                                                                    </button>
+                                                                    </div>
+                                                                </div>
+                                                </div>
+                                        </div>
+                                    </li>
+                                    <li class="bascket__item">
+                                        <div class="bascket__item-block">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" class='input-hidden product-checkbox' name="bascket__item-checkbox">
+                                                <div class="checkbox-fake"></div>
+                                                <div class="chekcbox-label">1</div>
+                                            </label>
+                                         
+                                        </div>
+                                        <div class="bascket__item-block">
+                                            <div class="product-img">
+                                                    <img src="./images/Layer317.png" alt="" srcset="">
                                             </div>
-                                            <div class="bascket__item-block">
-                                                    <div class="bascket__item-calculation">
-                                                            <span class="bascket__item-price">990 Р</span>
-                                                            <label for="" class="bascket__item-label">
-                                                                <input type="number" name="count" id="" class="input-text input-count">
-                                                            </label>
-                                                            <span class="bascket__item-amount">
-                                                                    990 Р
-                                                                </span>
-                                                    </div>
-                                        </li>
-                                        <li class="bascket__item">
-                                                <div class="bascket__item-block">
-                                                    <label for="bascket__item-checkbox" class="bascket__item-label">
-                                                          1
-                                                    </label>
-                                                    <input type="checkbox" name="bascket__item-checkbox" id="bascket__item-checkbox">
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <p>
+                                                        Нож складной WENGER Evolution, 'Автобус', 13 функций, 85 мм. WENGER
+                                                    </p>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <div class="bascket__item-calculation">
+                                                        <span class="bascket__item-price calc_currency">990 </span>
+                                                        <label for="" class="bascket__item-label">
+                                                            <input type="text" name="count" id="" class="input-text input-count">
+                                                        </label>
+                                                        <span class="bascket__item-amount calc_currency">
+                                                                990 
+                                                            </span>
                                                 </div>
-                                                <div class="bascket__item-block">
-                                                        <div class="product-img">
-                                                                <img src="./images/Layer317.png" alt="" srcset="">
-                                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="bascket__item">
+                                        <div class="bascket__item-block">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" class='input-hidden product-checkbox' name="bascket__item-checkbox">
+                                                <div class="checkbox-fake"></div>
+                                                <div class="chekcbox-label">1</div>
+                                            </label>
+                                         
+                                        </div>
+                                        <div class="bascket__item-block">
+                                            <div class="product-img">
+                                                    <img src="./images/Layer317.png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <p>
+                                                        Нож складной WENGER Evolution, 'Автобус', 13 функций, 85 мм. WENGER
+                                                    </p>
+                                        </div>
+                                        <div class="bascket__item-block">
+                                                <div class="bascket__item-calculation">
+                                                        <span class="bascket__item-price calc_currency">990 </span>
+                                                        <label for="" class="bascket__item-label">
+                                                            <input type="text" name="count" id="" class="input-text input-count">
+                                                        </label>
+                                                        <span class="bascket__item-amount calc_currency">
+                                                                990 
+                                                            </span>
                                                 </div>
-                                                <div class="bascket__item-block">
-                                                        <p>
-                                                                Нож складной WENGER Evolution, 'Автобус', 13 функций, 85 мм. WENGER
-                                                            </p>
-                                                </div>
-                                                <div class="bascket__item-block ">
-                                                    <div class="bascket__item-calculation">
-                                                            <span class="bascket__item-price">990 Р</span>
-                                                            <label for="" class="bascket__item-label">
-                                                                <input type="number" name="count" id="" class="input-text input-count">
-                                                            </label>
-                                                            <span class="bascket__item-amount">
-                                                                    990 Р
-                                                                </span>
-                                                    </div>
-                                                  
-                                                </div>
-                                            </li>
+                                        </div>
+                                    </li>
                                 </ul>
+                                <div class="computing">
+                                    <div class="subtotal">
+                                        <span class="computing-title subtotal-title">
+                                            Промежуточный итог по корзине:
+                                        </span>
+                                        <span class="calc subtotal-calc calc_currency">
+                                            197430 
+                                            </span>
+                                            </div>
+                                            <div class="vat">
+                                                <span class="computing-title vat-title">
+                                                    В том числе НДС:
+                                                </span>
+                                                <span class="calc vat-calc calc_currency">
+                                                        197430 
+                                                </span>
+                                            </div>
+   
                         </section>
 
             </div>
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container footer__container">
+              <span class="total-title">
+                    Итого:
+                </span>
+                <span class="total-calc calc_currency">
+                        190098 
+                </span>
+            </div>
+        </footer>
+       
     </div>
 <script src="./js/index.js"></script>
 </body>
