@@ -362,6 +362,7 @@ flex:2;
     padding-left: 0;
     background-color: white;
     position: relative;
+    text-align: center;
 }
 
 
@@ -434,7 +435,7 @@ font-weight: 700;
     padding-left: 31px;
     padding-bottom: 20px;
     padding-right: 31px;
-    display: flex;
+    display: none;
     box-shadow: 1px 1px 8px 2px grey;
     flex-direction: column;
     position: absolute;
@@ -442,6 +443,11 @@ font-weight: 700;
     top: 28px;
     z-index: 2;
     min-width: 315px;
+
+}
+
+.calc-quant-amount_active{
+    display: flex;
 }
 
 .calc-quant-amount-title{

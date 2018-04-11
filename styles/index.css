@@ -59,10 +59,6 @@ input, textarea {
   outline: 0;
   border: 0; }
 
-input:active, textarea:active {
-  outline: 0;
-  border: 0; }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
@@ -594,7 +590,8 @@ li.breacrumbs__item + li.breacrumbs__item:before {
 .input-count {
   padding-left: 0;
   background-color: white;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .bascket__item-amount {
   font-family: 'PF BeauSans Pro', Helvetica,Arial, sans-serif;
@@ -671,9 +668,7 @@ li.breacrumbs__item + li.breacrumbs__item:before {
   padding-left: 31px;
   padding-bottom: 20px;
   padding-right: 31px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-shadow: 1px 1px 8px 2px grey;
   box-shadow: 1px 1px 8px 2px grey;
   -webkit-box-orient: vertical;
@@ -685,6 +680,11 @@ li.breacrumbs__item + li.breacrumbs__item:before {
   top: 28px;
   z-index: 2;
   min-width: 315px; }
+
+.calc-quant-amount_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .calc-quant-amount-title {
   color: rgba(0, 101, 153, 0.98);
