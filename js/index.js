@@ -58,6 +58,7 @@ let index={
             vatTitleSpan.innerHTML=subTotal*18/100;
             console.log('vatTitle',vatTitleSpan.innerHTML);
             return vatTitleSpan.innerHTML;
+            console.log('totalCalc');
         }
         //Рассчитываем итого
         totalCalc=(subTotal,vat)=>{
