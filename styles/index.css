@@ -743,3 +743,6 @@ li.breacrumbs__item + li.breacrumbs__item:before {
   content: 'р';
   margin-left: 5px;
   margin-right: 5px; }
+
+.basket__item_hidden {
+  display: none; }
