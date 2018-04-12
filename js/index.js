@@ -14,6 +14,17 @@ let index={
         let checkCount=[];
         let vatTotal=0;
     
+        document.addEventListener('click',function(e){
+            console.log('etarget',e.target);
+            if (!e.target.closest('.bascket__item-block').querySelector('.calc-quant-amount')){
+                console.log('yes');
+                console.log('click',e.target.closest('.bascket__item-block').querySelector('.calc-quant-amount'));
+               deletecalcQuantAmount();
+            }
+            console.log('no');
+            console.log('clickno',e.target);
+            e.stopPropagation();
+        });
         //при загрузке страницы проставляем порядковый номер у чекбоксов и рассчитываем итоговую стоимость у продуктов
         window.addEventListener('load',()=>{
             let checkboxLabel= document.querySelectorAll('.chekcbox-label');
@@ -36,7 +47,7 @@ let index={
             let total =document.querySelectorAll('.bascket__item-amount');
             let subTotal=0;
             total.forEach((item,ind,total)=>{
-                item.innerHTML=(+item.parentNode.querySelector('.bascket__item-price').innerHTML * +item.parentNode.querySelector('.product-count').value);
+                item.innerHTML=(+item.parentNode.querySelector('.bascket__item-price').innerHTML * +item.parentNode.querySelector('.product-count').value).toFixed(2);
                 if (!bascketItemExist[ind].classList.contains('basket__item_hidden')){
                     subTotal+=+item.innerHTML;
                 }
@@ -48,14 +59,14 @@ let index={
         //Рассчитываем промеж стоимость
         subtotalCount=(subTotal)=>{
             let subtotalSpan=document.querySelector('.subtotal-calc');
-            subtotalSpan.innerHTML=subTotal;
+            subtotalSpan.innerHTML=+(subTotal).toFixed(2);
             console.log('subtotalCount',subtotalSpan.innerHTML);
             return subtotalSpan.innerHTML;
         }
         //Рассчитываем НДС
         vatTitle=(subTotal)=>{
             let vatTitleSpan=document.querySelector('.vat-calc');
-            vatTitleSpan.innerHTML=subTotal*18/100;
+            vatTitleSpan.innerHTML=(subTotal*18/100).toFixed(2);
             console.log('vatTitle',vatTitleSpan.innerHTML);
             return vatTitleSpan.innerHTML;
             console.log('totalCalc');
@@ -109,9 +120,9 @@ let index={
                 calcAmount.querySelector('.calc-quant-amount-price').innerHTML=+calcAmount.querySelector('.bascket__item-price').innerHTML;
                 calcAmount.querySelector('.input-change-count').value=+calcAmount.querySelector('.product-count').value;
                 let total =calcAmount.querySelector('.calc-quant-amount-total');
-                total.innerHTML=(+calcAmount.querySelector('.calc-quant-amount-price').innerHTML * +calcAmount.querySelector('.input-change-count').value);
+                total.innerHTML=(+calcAmount.querySelector('.calc-quant-amount-price').innerHTML * +calcAmount.querySelector('.input-change-count').value).toFixed(2);
                 console.log('total',total.innerHTML);
-                setTimeout(() =>p.focus(),50);
+                // setTimeout(() =>p.focus(),50);
             });
         };
         //Запрещаем ввод с клавиатуры в поле с количеством
@@ -199,7 +210,7 @@ let index={
             let price = +input.parentNode.querySelector('.calc-quant-amount-price').innerHTML;
             let currency = input.parentNode.querySelector('.calc-quant-amount-total');
             console.log('checkcurrencyitemLabel.value',itemLabel.value);
-            currency.innerHTML=(+price * +itemLabel.value);
+            currency.innerHTML=(+price * +itemLabel.value).toFixed(2);
             console.log('checkcurrency',currency);
         }
          //Уменьшаем значение в поле с количеством на 1, а затем вызываем функцию с перерасчетом

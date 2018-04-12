@@ -372,6 +372,8 @@ color:  #252525;
 font-size: 14px;
 font-weight: 400;
 font-style: normal;
+max-width: 33.3%;
+    width: 33.3%;
 }
 
 .computing {
@@ -480,6 +482,8 @@ font-size: 14px;
 font-weight: 400;
 text-transform: uppercase;
 padding-right: 3px;
+max-width: 20%;
+    width: 100%;
 
 &:after{
     content: 'x';
@@ -498,6 +502,7 @@ padding-right: 3px;
     font-weight: 400;
     text-transform: uppercase;
     padding-right: 3px;
+
 }
 
 .calc_currency{
@@ -509,4 +514,16 @@ padding-right: 3px;
 }
 .basket__item_hidden{
     display: none;
+}
+
+.bascket__item-price{
+    max-width: 33.3%;
+    width: 33.3%;
+}
+
+.bascket__item-count {
+    max-width: 33.3%;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
 }
