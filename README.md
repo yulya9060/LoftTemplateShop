@@ -1,6 +1,6 @@
 # LoftTemplateShop
 
- https://yulya9060.github.io/testLoft/
+ https://yulya9060.github.io/testLoft/index.html
  
  Не реализовано закрыти блока с расчетами при клике за его пределами
  
